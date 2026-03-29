@@ -1,4 +1,4 @@
-# WebGPU vs Canvas 2D — Image Blur Benchmark
+# WebGPU vs Canvas 2D: Image Blur Benchmark
 
 **[Live demo →](https://webgpu-image-benchmark.vercel.app/)**
 
@@ -22,6 +22,13 @@ npm run dev
 Then open `http://localhost:3000`.
 
 Requires a static file server because ES modules don't work over `file://`. Any server works — `npx serve .`, `python -m http.server`, VS Code Live Server, etc.
+
+## Benchmark
+
+<img width="1600" height="570" alt="webgpu-image-benchmark" src="https://github.com/user-attachments/assets/fc64264a-a8a7-4fcb-97f7-1f23502741a1" />
+
+
+> MacBook Air M4, GPU Apple Metal-3
 
 ## Browser support
 
