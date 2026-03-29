@@ -1,6 +1,8 @@
 # WebGPU vs Canvas 2D — Image Blur Benchmark
 
-Live benchmark for the article **[Image processing in the browser with WebGPU](https://joanleon.dev/en/webgpu-image-processing)** on [joanleon.dev](https://joanleon.dev).
+**[Live demo →](https://webgpu-image-benchmark.vercel.app/)**
+
+Companion benchmark for the article **[Image processing in the browser with WebGPU](https://joanleon.dev/en/webgpu-image-processing)** on [joanleon.dev](https://joanleon.dev).
 
 Measures the real performance difference between Canvas 2D (CPU) and WebGPU (GPU) when applying a Gaussian blur to images at different resolutions. Results are specific to your device and browser — run it yourself to see how your hardware compares.
 
