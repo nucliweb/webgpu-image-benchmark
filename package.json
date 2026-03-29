@@ -1,0 +1,9 @@
+{
+  "name": "webgpu-image-benchmark",
+  "private": true,
+  "description": "WebGPU vs Canvas 2D image processing benchmark",
+  "author": "Joan León <joanleon@gmail.com> (https://joanleon.dev)",
+  "scripts": {
+    "dev": "npx serve ."
+  }
+}

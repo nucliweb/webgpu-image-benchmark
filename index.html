@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>WebGPU vs Canvas 2D — Image Blur Benchmark</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main>
+    <header>
+      <h1>WebGPU vs Canvas 2D</h1>
+      <p class="subtitle">
+        Image processing performance benchmark in the browser.<br>
+        Gaussian blur · Radius 5 · <span id="runs-label">5</span> iterations · Median
+      </p>
+    </header>
+
+    <section id="device-info" class="card hidden">
+      <h2>Detected GPU</h2>
+      <dl id="adapter-info"></dl>
+    </section>
+
+    <section class="card">
+      <h2>Options</h2>
+      <label class="checkbox-label">
+        <input type="checkbox" id="skip-4k">
+        Skip 4K resolution
+        <span class="hint">(recommended on mobile — Canvas 2D may take 30+ seconds)</span>
+      </label>
+    </section>
+
+    <button id="run-btn">Run benchmark</button>
+
+    <div id="progress" class="hidden">
+      <p id="progress-text">Starting…</p>
+      <progress id="progress-bar" max="100" value="0"></progress>
+    </div>
+
+    <section id="results" class="card hidden">
+      <h2>Results</h2>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>Resolution</th>
+              <th>Megapixels</th>
+              <th>Canvas 2D</th>
+              <th>WebGPU</th>
+              <th>Speedup</th>
+            </tr>
+          </thead>
+          <tbody id="results-body"></tbody>
+        </table>
+      </div>
+      <p class="note" id="results-note"></p>
+    </section>
+
+    <footer>
+      <p>
+        Article: <a href="https://joanleon.dev/en/webgpu-image-processing" target="_blank" rel="noopener">
+          Image processing in the browser with WebGPU
+        </a>
+        ·
+        <a href="https://github.com/nucliweb/webgpu-image-benchmark" target="_blank" rel="noopener">
+          Source code
+        </a>
+      </p>
+    </footer>
+  </main>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
